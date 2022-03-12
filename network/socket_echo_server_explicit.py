@@ -6,7 +6,7 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Bind the socket to the address given on the command line
 server_name = sys.argv[1]
-server_address = (server_name, 10000)
+server_address = (server_name, 8889)
 print('starting up on {} port {}'.format(*server_address))
 sock.bind(server_address)
 sock.listen(1)
